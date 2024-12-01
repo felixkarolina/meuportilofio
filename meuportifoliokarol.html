@@ -1,0 +1,153 @@
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KAROLINA FELIX</title>
+
+    <!-- Link para o Bootstrap -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Estilos Customizados -->
+    <style>
+      body {
+        background-color: #F2F2F2;
+        font-family: Arial, sans-serif;
+      }
+
+      h1, h2, h3, h4 {
+        text-align: center;
+      }
+
+      h1 {
+        background-color: #A4A4A4;
+        padding: 10px;
+        color: white;
+      }
+
+      h2 {
+        background-color: #cf9ac7;
+        padding: 10px;
+        color: white;
+      }
+
+      h4 {
+        background-color: #BDBDBD;
+        padding: 10px;
+        color: white;
+      }
+
+      footer {
+        background-color: #333;
+        color: white;
+        padding: 10px 0;
+        text-align: center;
+        margin-top: 30px;
+      }
+
+      .card-img-top {
+        height: 200px;
+        object-fit: cover;
+      }
+    </style>
+  </head>
+
+  <body>
+
+    <!-- Menu de Navegação -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+      <div class="container">
+        <a class="navbar-brand" href="#">Sejam bem-vindos</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="#identificacao">ID</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#formacao">Formação Acadêmica</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#atuacao">Atuação Profissional</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#hobbies">Hobbies</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Seção de Identificação -->
+    <section id="identificacao" class="container py-5">
+      <h2>Olá! Um pouco sobre mim</h2>
+      <div class="text-center">
+        <img src="profissionallll.jpg" alt="Karolina Felix" class="img-fluid rounded-circle" width="200">
+        <h3>Prazer, Karol Felix &#129293;</h3>
+        <p><strong>Nome completo:</strong> Karolina Stefany Felix de Lima</p>
+        <p><strong>Data de nascimento:</strong> 30/01/2000</p>
+        <p><strong>Endereço:</strong> Sobradinho/DF</p>
+        <p><strong>Email:</strong> Karolinaprojecao00@gmail.com</p>
+      </div>
+    </section>
+
+    <!-- Seção de Formação Acadêmica -->
+    <section id="formacao" class="container py-5">
+      <h2>Formação Acadêmica</h2>
+      <p>Cursando Análise e Desenvolvimento de Sistemas | 2º semestre.</p>
+      <h4>Atualmente estou fazendo cursos e me especializando em algumas áreas de TI, inclusive achei uma plataforma grátis para esses cursos:</h4>
+      <a href="https://lms.santanderopenacademy.com/courses/822/pages/3-dot-1-loops?module_item_id=6694" target="_blank">Santander | Open Academy</a>
+    </section>
+
+    <!-- Seção de Atuação Profissional -->
+    <section id="atuacao" class="container py-5">
+      <h2>Atuação Profissional</h2>
+      <p>Empreendedora.</p>
+    </section>
+
+    <!-- Seção de Hobbies -->
+    <section id="hobbies" class="container py-5">
+      <h2>Hobbies</h2>
+      <p>Um dos meus HOBBIES/Passatempos favoritos é visitar cafeterias e também dançar onde posso expressar minhas emoções e me conectar com outras pessoas.</p>
+    </section>
+
+    <!-- Vídeo do YouTube -->
+    <section class="container py-5">
+      <h2>Vídeo: Cursos gratis Santader</h2>
+      <div class="text-center">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/-UmhxoeGGec?si=8sOPlqidIKTo_ah-&amp;start=4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+      </div>
+    </section>
+
+    <!-- Formulário de Contato -->
+    <section class="container py-5" id="contato">
+      <h2>Contato</h2>
+      <form action="processar_formulario.php" method="post">
+        <div class="form-group">
+          <label for="Celular">Celular:</label>
+          <input type="text" class="form-control" id="celular" name="celular" placeholder="Ex: 61 99155-7333" required>
+        </div>
+        <div class="form-group">
+          <label for="Email">Email:</label>
+          <input type="email" class="form-control" id="email" name="email" placeholder="Seu email" required>
+        </div>
+        <div class="form-group">
+          <label for="opniao">Deixe sua opinião:</label>
+          <textarea class="form-control" id="opniao" name="opniao" rows="4" required></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary">ENVIAR</button>
+      </form>
+    </section>
+
+    <!-- Rodapé -->
+    <footer>
+      <p>&copy; 2024 Karolina Felix. Todos os direitos reservados.</p>
+    </footer>
+
+    <!-- Scripts do Bootstrap -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  </body>
+</html>
